@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Fire UID Checker</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="bg"></div>
+<main class="wrap">
+  <section class="hero">
+    <div class="badge">FREE FIRE • UID DATA</div>
+    <h1>UID <span>Checker</span></h1>
+    <p>Enter a Free Fire UID to fetch available player information.</p>
+  </section>
+
+  <section class="card">
+    <label>PLAYER UID</label>
+    <div class="row">
+      <input id="uid" inputmode="numeric" autocomplete="off" placeholder="e.g. 2312730961" maxlength="20">
+      <select id="region">
+        <option value="">Auto Region</option>
+        <option>IND</option><option>BD</option><option>BR</option><option>US</option>
+        <option>SAC</option><option>NA</option><option>TH</option><option>ID</option>
+        <option>SG</option><option>PK</option>
+      </select>
+    </div>
+    <button id="check">CHECK UID</button>
+    <div id="status"></div>
+  </section>
+
+  <section id="result" class="result hidden"></section>
+</main>
+<script src="/app.js"></script>
+</body>
+  </html>
